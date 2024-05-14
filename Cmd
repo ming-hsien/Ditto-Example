@@ -1,0 +1,9 @@
+curl -u ditto:ditto -X POST -H 'Content-Type: application/json' -d
+'{
+    "thingId": "io.eclipseprojects.ditto:JetArm",
+    "policyId": "io.eclipseprojects.ditto:JetArm",
+    "definition": "",
+    "attributes": {
+        "BOT": "JetArm"
+    }
+ }' 'http://localhost:8080/api/2/things'

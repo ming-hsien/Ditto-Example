@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+      "time": "http://www.w3.org/2006/time#"
+    }
+  ],
+  "@type": "tm:ThingModel",
+  "title": "Position",
+  "description": "Position of each element",
+  "version": {
+    "model": "1.0.0"
+  },
+  "tm:optional": [],
+  "properties": {
+    "Position": {
+      "title": "Position",
+      "description": "Current Position.",
+      "type": "object",
+      "properties": {
+        "1": {
+          "title": "1",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "2": {
+          "title": "2",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "3": {
+          "title": "3",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "4": {
+          "title": "4",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "5": {
+          "title": "5",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "6": {
+          "title": "6",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "7": {
+          "title": "7",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "8": {
+          "title": "8",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "9": {
+          "title": "9",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "10": {
+          "title": "10",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        }
+      },
+      "required": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    }
+  }
+}
