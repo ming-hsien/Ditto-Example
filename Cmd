@@ -1,9 +1,16 @@
-curl -u ditto:ditto -X POST -H 'Content-Type: application/json' -d
-'{
-    "thingId": "io.eclipseprojects.ditto:JetArm",
-    "policyId": "io.eclipseprojects.ditto:JetArm",
-    "definition": "",
+# build Things
+curl -u ditto:ditto -X POST -H 'Content-Type: application/json' -d '{
+    "definition": "https://ming-hsien.github.io/Ditto-Example/JetArm.jsonld",
     "attributes": {
         "BOT": "JetArm"
     }
  }' 'http://localhost:8080/api/2/things'
+
+# Get Things (All Data)
+curl -u ditto:ditto -X GET 'http://localhost:8080/api/2/things/org.eclipse.ditto:39bf8d66-ed48-4fad-ae35-6dc576a1cc7d'
+
+# Get Things (特定 Data)
+curl -u ditto:ditto -X GET 'http://localhost:8080/api/2/things/org.eclipse.ditto:39bf8d66-ed48-4fad-ae35-6dc576a1cc7d/attributes/Position/1'
+
+# 更新 Data 值 變成10
+curl -u ditto:ditto -X PUT -H 'Content-Type: application/json' -d '10' 'http://localhost:8080/api/2/things/org.eclipse.ditto:39bf8d66-ed48-4fad-ae35-6dc576a1cc7d/attributes/Position/1'
